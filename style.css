@@ -1,0 +1,183 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #F5F0FF;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark {
+  background: #000000;
+}
+
+.flex {
+  margin-top: 100px;
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+a.bttn {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+a.bttn:hover {
+  color: #FFF;
+}
+a.bttn:focus {
+  color: #FFF;
+}
+
+a.bttn-dark {
+  color: #383c56;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+a.bttn-dark:hover {
+  color: #FFF;
+}
+a.bttn-dark:focus {
+  color: #FFF;
+}
+
+.bttn {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 270px;
+  font-weight: bold;
+  padding: 14px 0px;
+  border: 3px solid #ffffff;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.bttn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ffffff;
+  z-index: -2;
+}
+.bttn:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.bttn-dark {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 170px;
+  font-weight: bold;
+  padding: 10px 0px;
+  border: 3px solid #383c56;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(42, 40, 40, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.bttn-dark:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #383c56;
+  z-index: -1;
+}
+.bttn-dark:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn-dark:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body, html {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  .child {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    text-align: center;
+    z-index: 1;
+  }
+
+canvas {
+    position: absolute;
+    width: fit-content;
+    top:0;
+    left:0
+
+}
+
+h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Cutive Mono', monospace;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
